@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel World</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: black;
+            color: white;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+        }
+
+        #header {
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.6;
         }
 
         #portal-container {
             position: relative;
             width: 100vw;
-            height: 100vh;
+            height: calc(100vh - 100px);
         }
 
         #camera {
@@ -65,6 +76,10 @@
     </style>
 </head>
 <body>
+
+    <div id="header">
+        Welcome to pixel world, you are an interdimensional traveller, you can capture pictures of species in your smooth world and store them here to visit whenever you want. Click here to go through the portal
+    </div>
 
     <div id="portal-container">
         <!-- Live camera feed -->
